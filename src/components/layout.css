@@ -93,6 +93,18 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   max-width: 90vw;
   position: relative;
+
+}
+
+@media screen and (max-width: 480px) {
+  .chat {
+    display: flex;
+    flex-direction: row;
+
+    max-width: 90vw;
+    position: relative;
+  }
+
 }
 
 .chat h4 {
@@ -109,6 +121,7 @@ h1 {
   position: absolute;
   bottom: 0;
   left: 0;
+
 }
 
 .remote-participant {
@@ -122,4 +135,21 @@ h1 {
 .chat video {
   display: block;
   width: 100%;
+  border: solid 2px lightskyblue;
+  border-radius: 5px;
+
+}
+
+@media (max-width: 800px) {
+
+  .chat {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 90vw;
+
+  }
+
+
+
 }
